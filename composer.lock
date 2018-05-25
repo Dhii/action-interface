@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bbe6a93e090c4ca761cd610a3c3d520b",
+    "content-hash": "5ad6aafc231f338605573204aeca4019",
     "packages": [
         {
             "name": "dhii/exception-interface",
-            "version": "v0.1",
+            "version": "v0.2-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/exception-interface.git",
-                "reference": "fe64b30f67830474683357f77dc4a097bf84767e"
+                "reference": "8271ae49553695bc8d2cc4707f8a1459a031e64f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/fe64b30f67830474683357f77dc4a097bf84767e",
-                "reference": "fe64b30f67830474683357f77dc4a097bf84767e",
+                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/8271ae49553695bc8d2cc4707f8a1459a031e64f",
+                "reference": "8271ae49553695bc8d2cc4707f8a1459a031e64f",
                 "shasum": ""
             },
             "require": {
@@ -31,6 +31,11 @@
                 "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Dhii\\Exception\\": "src"
@@ -47,7 +52,7 @@
                 }
             ],
             "description": "Interfaces for most common exceptions",
-            "time": "2017-09-01T18:00:26+00:00"
+            "time": "2018-02-23T13:24:59+00:00"
         },
         {
             "name": "dhii/factory-interface",
