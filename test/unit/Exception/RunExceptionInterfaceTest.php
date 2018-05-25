@@ -2,7 +2,7 @@
 
 namespace Dhii\Action\Exception\UnitTest;
 
-use Dhii\Action\Exception\CouldNotRunExceptionInterface as TestSubject;
+use Dhii\Action\Exception\RunExceptionInterface as TestSubject;
 use Xpmock\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
@@ -13,14 +13,14 @@ use PHPUnit_Framework_MockObject_MockBuilder as MockBuilder;
  *
  * @since [*next-version*]
  */
-class CouldNotRunExceptionInterfaceTest extends TestCase
+class RunExceptionInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Action\Exception\CouldNotRunExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Action\Exception\RunExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -156,8 +156,8 @@ class CouldNotRunExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created.');
+        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement required interface.');
         $this->assertInstanceOf('Dhii\Action\Exception\ActionExceptionInterface', $subject, 'Subject does not implement required interface.');
         $this->assertInstanceOf('Dhii\Action\Exception\ActionAwareExceptionInterface', $subject, 'Subject does not implement required interface.');
-        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement required interface.');
     }
 }
